@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Trash-Out & Debris Removal Leads | Move-Out Clean-Outs | 5-County NC | BST Leads Network</title>
-  <meta name="description" content="BST Leads Network connects homeowners, landlords, property managers, and businesses with fast trash-outs, debris removal, and move-out clean-outs across Johnston, Wake, Franklin, and Nash County in Central & Eastern North Carolina. Call 252-886-5680." />
+  <title>Trash-Out & Debris Removal Leads | Move-Out Clean-Outs | NC | BST Leads Network</title>
+  <meta name="description" content="BST Leads Network connects homeowners, landlords, and property managers with fast trash-outs, debris removal, and move-out clean-outs across Central & Eastern North Carolina. Call 252-886-5680.">
 
   <style>
     body {
@@ -25,7 +25,7 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #333;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
     }
     h1, h2 {
       color: #ffd200;
@@ -39,36 +39,46 @@
       border-radius: 6px;
       display: inline-block;
     }
-    .hero {
-      padding: 30px 0;
+    section {
+      margin: 30px 0;
     }
     .box {
       background: #111a33;
       padding: 20px;
       border-radius: 10px;
-      margin-bottom: 20px;
     }
     ul {
       padding-left: 20px;
     }
-    input, select, textarea, button {
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input, select, textarea {
       width: 100%;
       padding: 10px;
-      margin-top: 8px;
+      margin-top: 6px;
       border-radius: 5px;
       border: none;
     }
     button {
+      margin-top: 15px;
       background: #ffd200;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
       font-weight: bold;
       cursor: pointer;
     }
     footer {
       border-top: 1px solid #333;
-      margin-top: 30px;
+      margin-top: 40px;
       padding-top: 15px;
       font-size: 14px;
       color: #ccc;
+      text-align: center;
     }
   </style>
 </head>
@@ -80,15 +90,15 @@
 <header>
   <div>
     <strong>BST Leads Network</strong><br>
-    <small>Connecting You With Fast, Reliable Clean-Out Services</small>
+    <small>Connecting You With Fast, Reliable Trash-Out & Clean-Out Services</small>
   </div>
   <a class="btn" href="tel:2528865680">CALL NOW: 252-886-5680</a>
 </header>
 
-<section class="hero">
+<section>
   <h1>Trash-Out, Debris Removal & Move-Out Clean-Out Services in Central & Eastern North Carolina</h1>
   <p>
-    BST Leads Network is a lead generator that connects homeowners, landlords,
+    BST Leads Network is a lead generation service connecting homeowners, landlords,
     property managers, and businesses with local contractors for trash-outs,
     debris removal, and move-out clean-outs.
   </p>
@@ -99,115 +109,49 @@
   </ul>
 </section>
 
-<section class="box" id="request">
+<section class="box">
   <h2>Get Fast Service – Free Request</h2>
 
-  <!-- Replace the action URL later with Formspree if you want -->
-  <form action="https://formspree.io/f/mvzpojnd" method="POST">
+  <!-- IMPORTANT: Replace the URL below with YOUR Formspree endpoint -->
+  <form action="https://formspree.io/f/YOURFORMID" method="POST">
+
     <label>Name</label>
-    <input type="text" required>
+    <input type="text" name="name" required>
 
     <label>Phone Number</label>
-    <input type="tel" required>
+    <input type="tel" name="phone" required>
 
     <label>County</label>
-    <select required>
-      <option>Johnston County</option>
-      <option>Wake County</option>
-      <option>Franklin County</option>
-      <option>Nash County</option>
-      <option>Other Nearby Area</option>
+    <select name="county" required>
+      <option value="Johnston County">Johnston County</option>
+      <option value="Wake County">Wake County</option>
+      <option value="Franklin County">Franklin County</option>
+      <option value="Nash County">Nash County</option>
+      <option value="Other">Other Nearby Area</option>
     </select>
 
     <label>Service Needed</label>
-    <select required>
-      <option>Trash-Out</option>
-      <option>Debris Removal</option>
-      <option>Move-Out Clean-Out</option>
-      <option>Residential Clean-Out</option>
-      <option>Commercial Clean-Out</option>
+    <select name="service" required>
+      <option value="Trash-Out">Trash-Out</option>
+      <option value="Debris Removal">Debris Removal</option>
+      <option value="Move-Out Clean-Out">Move-Out Clean-Out</option>
+      <option value="Residential Clean-Out">Residential Clean-Out</option>
+      <option value="Commercial Clean-Out">Commercial Clean-Out</option>
     </select>
 
     <label>Job Details</label>
-    <textarea rows="4" required></textarea>
+    <textarea name="details" rows="4" required></textarea>
+
+    <input type="hidden" name="source" value="BST Leads Network Website">
 
     <button type="submit">SUBMIT REQUEST</button>
-  </form<form action="PASTE-YOUR-ENDPOINT-HERE" method="POST">
-
-  <label>Name</label>
-  <input type="text" name="name" required>
-
-  <label>Phone Number</label>
-  <input type="tel" name="phone" required>
-
-  <label>County</label>
-  <select name="county" required>
-    <option>Johnston County</option>
-    <option>Wake County</option>
-    <option>Franklin County</option>
-    <option>Nash County</option>
-    <option>Other Nearby Area</option>
-  </select>
-
-  <label>Service Needed</label>
-  <select name="service_needed" required>
-    <option>Trash-Out</option>
-    <option>Debris Removal</option>
-    <option>Move-Out Clean-Out</option>
-    <option>Residential Clean-Out</option>
-    <option>Commercial Clean-Out</option>
-  </select>
-
-  <label>Job Details</label>
-  <textarea name="job_details" rows="4" required></textarea>
-
-  <input type="hidden" name="source" value="BST Leads Network Website">
-
-  <button type="submit">SUBMIT REQUEST</button>
-  </<form action="PASTE-YOUR-ENDPOINT-HERE" method="POST">
-
-  <label>Name</label>
-  <input type="text" name="name" required>
-
-  <label>Phone Number</label>
-  <input type="tel" name="phone" required>
-
-  <label>County</label>
-  <select name="county" required>
-    <option>Johnston County</option>
-    <option>Wake County</option>
-    <option>Franklin County</option>
-    <option>Nash County</option>
-    <option>Other Nearby Area</option>
-  </select>
-
-  <label>Service Needed</label>
-  <select name="service_needed" required>
-    <option>Trash-Out</option>
-    <option>Debris Removal</option>
-    <option>Move-Out Clean-Out</option>
-    <option>Residential Clean-Out</option>
-    <option>Commercial Clean-Out</option>
-  </select>
-
-  <label>Job Details</label>
-  <textarea name="job_details" rows="4" required></textarea>
-
-  <input type="hidden" name="source" value="BST Leads Network Website">
-
-  <button type="submit">SUBMIT REQUEST</button>
   </form>
 </section>
 
 <section class="box">
   <h2>Trash Removal, Debris Hauling & Clean-Out Services</h2>
-  <p>
-    We help coordinate trash-outs, junk removal, debris hauling,
-    eviction clean-outs, rental turnovers, residential clean-outs,
-    and commercial clean-outs.
-  </p>
   <ul>
-    <li>Trash & junk removal</li>
+    <li>Trash-outs & junk removal</li>
     <li>Debris hauling</li>
     <li>Move-out clean-outs</li>
     <li>Eviction & foreclosure clean-outs</li>
@@ -233,9 +177,8 @@
   </ul>
 </section>
 
-<section class="box">
+<section>
   <h2>Need Service Today?</h2>
-  <p>Call now or submit the form above to request service.</p>
   <a class="btn" href="tel:2528865680">CALL NOW: 252-886-5680</a>
 </section>
 
